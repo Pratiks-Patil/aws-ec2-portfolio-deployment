@@ -1,4 +1,4 @@
-<img width="1000" height="400" alt="ChatGPT Image Jun 27, 2026, 01_13_47 PM" src="https://github.com/user-attachments/assets/513759cf-7370-400b-81a2-4965b262ad4c" />
+<img width="800" height="400" alt="ChatGPT Image Jun 27, 2026, 01_13_47 PM" src="https://github.com/user-attachments/assets/513759cf-7370-400b-81a2-4965b262ad4c" />
 
 
 <p align="center">
@@ -38,7 +38,7 @@ This project was built as part of my AWS Cloud learning journey with a focus on 
 
 # 🏗 Architecture
 <p align="center">
-<img width="1536" height="1024" alt="ChatGPT Image Jun 27, 2026, 01_09_47 PM" src="https://github.com/user-attachments/assets/5a76509b-184d-45c1-a863-44053ae8e876" />
+<img width="1000" height="600" alt="ChatGPT Image Jun 27, 2026, 01_09_47 PM" src="https://github.com/user-attachments/assets/5a76509b-184d-45c1-a863-44053ae8e876" />
 </p>
 
 ---
