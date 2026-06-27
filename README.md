@@ -15,7 +15,12 @@
 </p>
 
 ---
+## 🌐 Live Demo: [Portfolio Demo](https://pratikspatil.netlify.app/)
 
+> **Note:** This project was successfully deployed and tested on AWS EC2.  
+> The EC2 instance has been stopped/terminated to optimize AWS usage costs.  
+> Screenshots and deployment steps are provided in this repository.
+---
 ## 📌 Project Overview
 
 This project demonstrates the deployment of a responsive personal portfolio website on an **AWS EC2 Ubuntu instance** using **Nginx** as the web server.
