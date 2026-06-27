@@ -1,5 +1,6 @@
+<p align="center">
 <img width="800" height="400" alt="ChatGPT Image Jun 27, 2026, 01_13_47 PM" src="https://github.com/user-attachments/assets/513759cf-7370-400b-81a2-4965b262ad4c" />
-
+</p>
 
 <p align="center">
 
@@ -188,8 +189,6 @@ During the deployment, the following real-world issues were encountered and reso
 # 👨‍💻 Author
 
 **Pratik Patil**
-
-Aspiring Cloud & DevOps Engineer
 
 GitHub:
 https://github.com/Pratiks-Patil
