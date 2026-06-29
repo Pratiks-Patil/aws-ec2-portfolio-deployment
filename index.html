@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CloudFlix – Unlimited entertainment powered by AWS cloud infrastructure." />
+  <title>CloudFlix – Stream Without Limits</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       LOADING SCREEN
+  ============================================================ -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-logo">
+      <span class="loading-logo-text">CLOUDFLIX</span>
+      <div class="loading-bar-wrap">
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-left">
+      <a href="#" class="logo" aria-label="CloudFlix Home">
+        <span class="logo-cloud">CLOUD</span><span class="logo-flix">FLIX</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#" class="nav-link">TV Shows</a></li>
+        <li><a href="#" class="nav-link">Movies</a></li>
+        <li><a href="#" class="nav-link">New &amp; Popular</a></li>
+        <li><a href="#" class="nav-link">My List</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <button class="nav-icon-btn" aria-label="Search">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+      <button class="nav-icon-btn" aria-label="Notifications">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+        <span class="notif-badge">3</span>
+      </button>
+      <div class="avatar" aria-label="Profile">
+        <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=cloudflix&backgroundColor=e50914" alt="User Avatar" />
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"
+         style="background-image: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1920&q=80');">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span> Now Streaming
+      </div>
+      <h1 class="hero-title reveal-up">
+        Unlimited<br />
+        <span class="hero-title-accent">Entertainment.</span><br />
+        Powered by <span class="hero-title-aws">AWS.</span>
+      </h1>
+      <p class="hero-subtitle reveal-up">
+        Experience a premium streaming platform engineered for scale.<br />
+        Built on AWS EC2, Load Balancers, Auto Scaling Groups, and EBS.
+      </p>
+      <div class="hero-meta reveal-up">
+        <span class="meta-tag">★ 9.4</span>
+        <span class="meta-tag">2025</span>
+        <span class="meta-tag">4K UHD</span>
+        <span class="meta-tag">Dolby Atmos</span>
+      </div>
+      <div class="hero-buttons reveal-up">
+        <button class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Watch Now
+        </button>
+        <button class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          More Info
+        </button>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main class="content-area">
+
+    <!-- AWS STATUS PANEL -->
+    <section class="status-section reveal-up">
+      <div class="status-card glass">
+        <div class="status-header">
+          <div class="status-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21.5 2h-19A.5.5 0 0 0 2 2.5v16a.5.5 0 0 0 .5.5h8l2 3 2-3h7.5a.5.5 0 0 0 .5-.5v-16a.5.5 0 0 0-.5-.5Z"/>
+              <path d="M6 7h12M6 11h8M6 15h5"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="status-title">Cloud Infrastructure Status</h3>
+            <p class="status-subtitle">Real-time deployment info</p>
+          </div>
+          <div class="status-live">
+            <span class="live-dot"></span> LIVE
+          </div>
+        </div>
+        <div class="status-grid">
+          <div class="status-item">
+            <span class="status-label">Environment</span>
+            <span class="status-value" id="envStatus">Development</span>
+          </div>
+          <div class="status-item">
+            <span class="status-label">Hosting</span>
+            <span class="status-value" id="hostingStatus">Localhost</span>
+          </div>
+          <div class="status-item">
+            <span class="status-label">Server</span>
+            <span class="status-value" id="serverStatus">localhost</span>
+          </div>
+          <div class="status-item">
+            <span class="status-label">Region</span>
+            <span class="status-value" id="regionStatus">us-east-1</span>
+          </div>
+          <div class="status-item">
+            <span class="status-label">Instance</span>
+            <span class="status-value" id="instanceStatus">t3.medium</span>
+          </div>
+          <div class="status-item">
+            <span class="status-label">Status</span>
+            <span class="status-value status-healthy" id="healthStatus">
+              <span class="health-dot"></span> Healthy
+            </span>
+          </div>
+        </div>
+        <div class="status-footer">
+          <span>Last updated: <span id="lastUpdated">just now</span></span>
+          <span class="status-version">v1.0.0-aws-preview</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROW: TRENDING NOW -->
+    <section class="content-row reveal-up">
+      <div class="row-header">
+        <h2 class="row-title">Trending Now</h2>
+        <a href="#" class="row-see-all">See All <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+      <div class="row-wrapper">
+        <button class="row-arrow row-arrow-left" aria-label="Scroll left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="cards-track" id="trending">
+          <!-- Cards injected by JS -->
+        </div>
+        <button class="row-arrow row-arrow-right" aria-label="Scroll right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ROW: POPULAR MOVIES -->
+    <section class="content-row reveal-up">
+      <div class="row-header">
+        <h2 class="row-title">Popular Movies</h2>
+        <a href="#" class="row-see-all">See All <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+      <div class="row-wrapper">
+        <button class="row-arrow row-arrow-left" aria-label="Scroll left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="cards-track" id="popular">
+        </div>
+        <button class="row-arrow row-arrow-right" aria-label="Scroll right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- FEATURED MOVIE SECTION -->
+    <section class="featured-section reveal-up">
+      <div class="featured-bg"
+           style="background-image: url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1920&q=80');">
+      </div>
+      <div class="featured-overlay"></div>
+      <div class="featured-content">
+        <div class="featured-label">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Featured Title
+        </div>
+        <h2 class="featured-title">Echoes of the Void</h2>
+        <div class="featured-meta">
+          <span>★ 9.1</span>
+          <span>2025</span>
+          <span>2h 28m</span>
+          <span>Sci-Fi · Thriller</span>
+        </div>
+        <p class="featured-desc">
+          When a deep-space research station loses contact with Earth, a lone systems engineer must decode an alien signal before her oxygen runs out — and the void consumes everything.
+        </p>
+        <div class="featured-buttons">
+          <button class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Play Now
+          </button>
+          <button class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            Add to List
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROW: NEW RELEASES -->
+    <section class="content-row reveal-up">
+      <div class="row-header">
+        <h2 class="row-title">New Releases</h2>
+        <a href="#" class="row-see-all">See All <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+      <div class="row-wrapper">
+        <button class="row-arrow row-arrow-left" aria-label="Scroll left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="cards-track" id="newReleases">
+        </div>
+        <button class="row-arrow row-arrow-right" aria-label="Scroll right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ROW: CONTINUE WATCHING -->
+    <section class="content-row reveal-up">
+      <div class="row-header">
+        <h2 class="row-title">Continue Watching</h2>
+        <a href="#" class="row-see-all">See All <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+      <div class="row-wrapper">
+        <button class="row-arrow row-arrow-left" aria-label="Scroll left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="cards-track" id="continueWatching">
+        </div>
+        <button class="row-arrow row-arrow-right" aria-label="Scroll right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ROW: TOP PICKS -->
+    <section class="content-row reveal-up">
+      <div class="row-header">
+        <h2 class="row-title">Top Picks For You</h2>
+        <a href="#" class="row-see-all">See All <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+      <div class="row-wrapper">
+        <button class="row-arrow row-arrow-left" aria-label="Scroll left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="cards-track" id="topPicks">
+        </div>
+        <button class="row-arrow row-arrow-right" aria-label="Scroll right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ROW: ONLY ON CLOUDFLIX -->
+    <section class="content-row reveal-up">
+      <div class="row-header">
+        <h2 class="row-title">
+          <span class="row-title-badge">C</span>
+          Only on CloudFlix
+        </h2>
+        <a href="#" class="row-see-all">See All <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+      <div class="row-wrapper">
+        <button class="row-arrow row-arrow-left" aria-label="Scroll left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="cards-track" id="onlyCloudflix">
+        </div>
+        <button class="row-arrow row-arrow-right" aria-label="Scroll right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo footer-logo">
+            <span class="logo-cloud">CLOUD</span><span class="logo-flix">FLIX</span>
+          </a>
+          <p class="footer-tagline">Stream Without Limits.<br />Deployed on AWS.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="GitHub" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About CloudFlix</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Careers</a>
+            <a href="#">Press Room</a>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Account</a>
+            <a href="#">Accessibility</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Legal Notices</a>
+          </div>
+          <div class="footer-col">
+            <h4>Infrastructure</h4>
+            <a href="#">AWS Status</a>
+            <a href="#">Architecture</a>
+            <a href="#">Deployment</a>
+            <a href="#">Monitoring</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 CloudFlix. All rights reserved. Built with ☁️ on AWS.</p>
+        <p class="footer-region">Service code: cloudflix-us-east-1</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
